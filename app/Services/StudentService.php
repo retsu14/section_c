@@ -4,7 +4,7 @@ namespace App\Services;
 
 use App\Repositories\StudentRepository;
 
-class StudentService 
+class StudentService
 {
     // DEPENDENCY INJECTION
     public function __construct(
@@ -16,7 +16,7 @@ class StudentService
     {
         return $this->studentRepository->getStudents();
     }
-    
+
     // create student
     public function create(array $data)
     {
